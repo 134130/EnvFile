@@ -19,6 +19,7 @@
       <h3>Supported formats:</h3>
       <ul>
         <li><b>.env</b></li>
+        <li><b>mise-en-place</b></li>
         <li><b>YAML</b> dictionary</li>
         <li><b>JSON</b> dictionary</li>
       </ul>
@@ -63,6 +64,7 @@
 
   <extensions defaultExtensionNs="net.ashald.envfile">
     <envVarsProvider id="env" factory="net.ashald.envfile.providers.dotenv.DotEnvFileParserFactory"/>
+    <envVarsProvider id="mise-en-place" factory="net.ashald.envfile.providers.mise.MiseEnvVarsProviderFactory"/>
     <envVarsProvider id="yaml" factory="net.ashald.envfile.providers.yaml.YamlEnvFileParserFactory"/>
     <envVarsProvider id="runconfig" factory="net.ashald.envfile.providers.runconfig.RunConfigEnvVarsProviderFactory"/>
   </extensions>

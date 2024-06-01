@@ -1,0 +1,2 @@
+[env]
+A = 'SHOULD_BE_PRINTED'
